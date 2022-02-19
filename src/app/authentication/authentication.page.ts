@@ -33,7 +33,7 @@ export class AuthenticationPage implements OnInit {
     this.authService.login(this.credentials.value).subscribe(
       async (res) => {
         await loading.dismiss();        
-        this.router.navigateByUrl('/tabs', { replaceUrl: true });
+        this.router.navigateByUrl('/home', { replaceUrl: true });
       },
       async (res) => {
         await loading.dismiss();
